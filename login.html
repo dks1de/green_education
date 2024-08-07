@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Cadastro</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!-- partial:index.partial.html -->
+<nav class="dropdownmenu">
+  <ul>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="calculos.html">Calcule</a></li>
+    <li><a href="EcoHistoria.html">EcoHistória</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+<!-- partial -->
+  
+<!-- partial:index.partial.html -->
+<!--
+  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
+  I'm @hk95 on GitHub. Feel free to message me anytime.
+-->
+
+<section class="user">
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Não tem uma conta?</h2>
+        <p class="user_unregistered-text">Crie uma agora e aproveite as maravilhas de ter uma vida sustentável!</p>
+        <button class="user_unregistered-signup" id="signup-button">🢀 Cadastre-se</button>
+      </div>
+
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">Tem uma conta?</h2>
+        <p class="user_registered-text">Entre em sua conta e comece a compesar sua emissão de carbono!</p>
+        <button class="user_registered-login" id="login-button">Entrar 🢂</button>
+      </div>
+    </div>
+    
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">Login</h2>
+        <form class="forms_form">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Senha" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <button type="button" class="forms_buttons-forgot">Esqueceu a senha?</button>
+            <input type="submit" value="Login" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+      <div class="user_forms-signup">
+        <h2 class="forms_title">Cadastre-se</h2>
+        <form class="forms_form">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" placeholder="Nome completo" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="email" placeholder="Email" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Senha" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Cadastre-se" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

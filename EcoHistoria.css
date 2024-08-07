@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+html{
+	scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1e2c25;
+	display: block;
+}
+.parteum{
+	width: 100%;
+	height: 100vh;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+	z-index: 7;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: right;
+	text-align: right;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background:none;
+	color: #FFFFFF;
+	display: block;
+	font: bold 15px/20px arial;
+	padding: 15px 37.5px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: none;
+	border:darkgreen solid 5px;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+#eco{
+	font-family: "Carter One", system-ui;
+	font-weight: 400;
+	font-style: normal;	
+  font-size: 6rem;
+  margin-top: 13.25%;
+  margin-left: 20%;
+  color:#63BF50;
+  text-align: left;
+}
+#historia{
+    font-family: Arial;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 3rem;
+	color: #FFFFFF;
+	margin-left: 20%;
+}
+#conteudo-lado-esquerdo{
+	width: 35%;
+	height: 70vh;
+	float:left;
+	color:#FFFFFF;
+	left: 0;
+	position: absolute;
+}
+#circulosuperior{
+	width: 180px;
+	position: absolute;
+	top:0;
+	left: 0%;
+}
+#logo{
+	width: 60px;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+.logo-superior{
+	cursor: pointer; 	 	 	 
+}
+.titulo{
+	line-height: 1;
+}
+#mudas{
+	margin-top: 10%;
+	margin-left: -30%;
+	width: 950px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 70px;
+	transform: scalex(1);
+}
+#conteudo-lado-direito{
+	width: 60%;
+	height: 80vh;
+	top: 15vh;
+	right: 0;
+	text-align: center;
+	color: whitesmoke;
+	position: absolute;
+}
+#pontos{
+	width: 150px;
+}
+.texto{
+	font-family: "Source Sans 3", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.25rem;
+	margin: 2% 25% 4% 20%;
+	text-align: justify;
+}
+.quest{
+	font-size: 2.6rem;
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-align: left;
+	margin: auto 20% auto 20%;
+}
+#botao{
+	cursor:pointer;
+	background-color: #4C8F36;
+	color: whitesmoke;
+	width: 150px;
+	height: 50px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	border: none;
+	font-size: 1rem;
+	margin: 10% auto auto auto;
+	border-radius: 15px;
+}
+#botao:hover{
+	color: rgb(255, 232, 232);
+	background-color: #7ab466;
+	transition:0.25s ease-in-out;
+	border-radius: 50px;
+}
+#circulocortado{
+	width: 250px;
+	position: absolute;
+	right: 0;
+}
+.partedois{
+	height: 90vh;
+	z-index: 999;
+}
+#conheça{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-content: center;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}	
+#conheçaVerde{
+    text-align: center;
+    background-color: #54732a;
+    text-shadow: 1px 1px 0 black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+}
+.apresentacao{
+	color: whitesmoke;
+	font-family: "Source Sans 3", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1rem;
+	text-align: center;
+	margin: auto 10% auto 10%;
+}
+#apresentacao1{
+	width:50%;
+    margin: 5% 25% auto 25%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+#apresentacao2{
+	width:80%;
+    margin: 5% 10% auto 10%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.fotos{
+	width: 250px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	#eco{
+	font-family: "Carter One", system-ui;
+	font-weight: 400;
+	font-style: normal;	
+  	font-size: 4rem;
+  	margin-top: 20%;
+  	margin-left: 20%;
+	color:#63BF50;
+	text-align: left;
+	}
+	#historia{
+		font-family: Arial;
+		font-weight: 600;
+		font-style: normal;
+		font-size: 2rem;
+		color: #FFFFFF;
+		margin-left: 20%;
+	}
+	#conteudo-lado-esquerdo{
+		width: 35%;
+		height: 70vh;
+		float:left;
+		color:#FFFFFF;
+		left: 0;
+		position: absolute;
+	}
+	#circulosuperior{
+		width: 180px;
+		position: absolute;
+		top:0;
+		left: 0%;
+	}
+	#logo{
+		width: 60px;
+		position: absolute;
+		top: 1%;
+		left: 1%;
+	}
+	.logo-superior{
+		cursor: pointer; 	 	 	 
+	}
+	.titulo{
+		line-height: 1;
+	}
+	#mudas{
+		margin-top: 12%;
+		margin-left: -50%;
+		width: 900px;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 70px;
+		transform: scalex(-1);
+	}
+	#conteudo-lado-direito{
+		width: 60%;
+		height: 80vh;
+		top: 15vh;
+		right: 0;
+		text-align: center;
+		color: whitesmoke;
+		position: absolute;
+	}
+	#pontos{
+		width: 100px;
+		margin: 2vh;
+	}
+	.texto{
+		font-family: "Source Sans 3", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 1.1rem;
+		margin: 2% 25% 4% 20%;
+		text-align: justify;
+	}
+	.quest{
+		font-size: 2rem;
+		font-family: "Red Hat Display", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-align: left;
+		margin: 2vh 20% auto 20%;
+	}
+	#botao{
+		cursor:pointer;
+		background-color: #4C8F36;
+		color: whitesmoke;
+		width: 150px;
+		height: 50px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		border: none;
+		font-size: 1rem;
+		margin: 2vh auto auto auto;
+		border-radius: 15px;
+	}
+	#botao:hover{
+		color: rgb(255, 232, 232);
+		background-color: #7ab466;
+		transition:0.25s ease-in-out;
+		border-radius: 50px;
+	}
+	#circulocortado{
+		width: 250px;
+		position: absolute;
+		top:60vh;
+		right: 0;
+	}
+  }

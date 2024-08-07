@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadoras de Emissão de Carbono</title>
+    <link rel="stylesheet" href="calculos.css">
+</head>
+<body>
+        <!-- partial:index.partial.html -->
+<nav class="dropdownmenu">
+  <ul>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="calculos.html">Calcule</a></li>
+    <li><a href="EcoHistoria.html">EcoHistória</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+<!-- partial -->
+
+    <div class="container">
+        <h1 id="text-question">A Green Education Gostaria de saber<a id="color-calcular">O que você gostaria de calcular?</a></h1>
+        <nav class="texts-and-buttons">
+        
+
+        <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('transport')">
+          <img class="icones" src="imagens/icones/viagensAereas.png">
+          <p class="text-title"> Cálculo de Transporte</p>
+          <p class="text-specific">
+            Promova a mobilidade sustentável, se possível, dê preferência por caminhar, andar de bicicleta ou utilizar transporte público em vez de carro particular. Isso causa menos impacto!
+          </p>
+<p class="text-hidden">Transporte </p>
+        </button>
+        </nav>
+        
+
+         <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('energy')">
+          <img class="icones" src="imagens/icones/energia.png">
+          <p class="text-title"> Cálculo de Energia</p>
+          <p class="text-specific">
+            Economize energia, aproveite a luz natural e mantenha cortinas e persianas abertas durante o dia; considere a instalação de painéis solares para gerar energia renovável e sustentável.
+          </p>
+        <p class="text-hidden">Energia </p>
+        </button>
+         </nav>
+        
+
+        <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('airTravel')">
+          <img class="icones" src="imagens/icones/viagensAereas.png">
+          <p class="text-title"> Cálculo de Viagens Aéreas</p>
+          <p class="text-specific">
+            Escolha voos diretos, participe de programas de compensação de carbono e prefira linhas aéreas comprometidas com a sustentabilidade, para wue o planeta não sofra.
+          </p>
+        <p class="text-hidden">Viagens</p>
+        </button>
+        </nav>
+        
+
+        <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('refrigerantGas')">
+          <img class="icones" src="imagens/icones/residuos.png">
+          <p class="text-title"> Cálculo de Gases Refrigerantes</p>
+          <p class="text-specific">
+            Utilize gases refrigerantes ecológicos: opte por sistemas de refrigeração que usem substâncias menos prejudiciais à camada de ozônio e que tenham menor potencial de aquecimento global.
+          </p>
+        <p class="text-hidden">Gases </p>
+        </button>
+        </nav>
+        
+
+        <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('water')">
+          <img class="icones" src="imagens/icones/agua.png">
+          <p class="text-title"> Cálculo de Consumo de Água</p>
+          <p class="text-specific">
+            Instale dispositivos economizadores em torneiras e chuveiros, conserte vazamentos rapidamente e reutilize a água da chuva para regar plantas e limpar áreas externas.
+          </p>
+        <p class="text-hidden">Água </p>
+        </button>
+        </nav>
+        
+        <nav class="text ponteiro" id="glass-effect" onclick="openCalculation('residues')">
+          <img class="icones" src="imagens/icones/residuos.png">
+          <p class="text-title"> Cálculo de Resíduos</p>
+          <p class="text-specific">
+            Gerencie resíduos adequadamente: recicle e reutilize materiais sempre que possível, reduza o consumo de plásticos descartáveis, optando por alternativas sustentáveis.
+          </p>
+
+
+        <p class="text-hidden">Resíduos </p>
+        </button>
+        </nav>
+        </nav>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="closeCalculation()"></div>
+
+    <div id="calculation-container" class="calculation-container">
+        <span class="close" onclick="closeCalculation()">×</span>
+        <!-- O conteúdo do cálculo será injetado aqui -->
+    </div>
+    <script type="text/javascript" src="calculos.js"></script>
+</body>
+</html>
